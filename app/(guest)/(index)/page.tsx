@@ -2,21 +2,23 @@ import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Home Page</h1>
-      
-      <p className="mb-4">
-        Welcome to the homepage! This is a simple example of adding content 
-        alongside a button component.
-      </p>
+    <div className="p-6 flex justify-center">
+      <div className="text-center max-w-3xl w-full">
+        <h1 className="text-5xl font-bold mb-4">
+          Building Modern Web Experiences
+        </h1>
 
-      <ul className="list-disc list-inside mb-4">
-        <li>Easy to customize</li>
-        <li>Reusable UI components</li>
-        <li>Built with Next.js</li>
-      </ul>
+        <p className="text-lg text-gray-600 mb-6">
+          Hi, I'm Micco — a passionate web developer focused on creating
+          clean, responsive, and user-friendly applications using modern
+          web technologies.
+        </p>
 
-      <Button>Click Me</Button>
+        <div className="flex gap-4 justify-center">
+          <Button>Explore My Work</Button>
+          <Button variant="outline">Contact Me</Button>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
