@@ -8,11 +8,11 @@ export default async function ProfilePage({ params }: { params: Promise<{ slug: 
   // As if Database Response
   const userDb = [
     {
-      id: "jameboy",
-      name: "Jameboy Escartin",
+      id: "micco",
+      name: "Micco James Ang",
       section: "BSIT - 3A",
-      email: "escartinjameboy@gmail.com",
-      hobbies: ["Chess", "Guitar", "Hobby 3"]
+      email: "miccojamesang9@gmail.com",
+      hobbies: ["Basketball", "Guitar", "Running"]
     }
   ]
 

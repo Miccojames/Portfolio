@@ -21,17 +21,17 @@ export function Footer() {
           {/* Blogs */}
           <div>
             <ul>
-              <li><Link href="/">Blog 1</Link></li>
-              <li><Link href="/about">Blog 2</Link></li>
-              <li><Link href="/projects">Blog 3</Link></li>
+              <li><Link href="">Blog 1</Link></li>
+              <li><Link href="">Blog 2</Link></li>
+              <li><Link href="">Blog 3</Link></li>
             </ul>
           </div>
           {/* Contacts */}
           <div>
             <ul>
-              <li><Link href="/">Phone: 123123</Link></li>
-              <li><Link href="/about">Email: test@gmail.com</Link></li>
-              <li><Link href="/projects">Github</Link></li>
+              <li><Link href="">Phone: 123123</Link></li>
+              <li><Link href="">Email: test@gmail.com</Link></li>
+              <li><Link href="">Github</Link></li>
             </ul>
           </div>
         </div>
