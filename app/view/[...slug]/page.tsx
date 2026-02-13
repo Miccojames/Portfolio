@@ -1,66 +1,61 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { Suspense } from "react";
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Suspense } from 'react';
 
-export default function ProfilePage({ params }: { params: { slug: string[] } }) {
-  const { slug } = params;
+export default async function ProfilePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
-  const username = slug?.[0];
-  const subpage = slug?.[1];
-
-  // Fake Database
+  // As if Database Response
   const userDb = [
     {
       id: "jameboy",
       name: "Jameboy Escartin",
       section: "BSIT - 3A",
       email: "escartinjameboy@gmail.com",
-      hobbies: ["Chess", "Guitar", "Hobby 3"],
-    },
-  ];
+      hobbies: ["Chess", "Guitar", "Hobby 3"]
+    }
+  ]
 
-  // Find user
-  const user = userDb.find((u) => u.id.toLowerCase() === username?.toLowerCase());
-
-  if (!user) {
-    return (
-      <div className="border p-4 mb-4 rounded-md">
-        <h1>User Not Found</h1>
-      </div>
-    );
-  }
-
-  // Hobbies page
-  if (subpage?.toLowerCase() === "hobbies") {
-    return (
-      <div className="border p-4 mb-4 rounded-md">
-        <h1>Hobby Page</h1>
-        <ul className="list-disc pl-6">
-          {user.hobbies.map((hobby) => (
-            <li key={hobby}>{hobby}</li>
+  for (const currentSlug of slug) {
+    if (currentSlug === "hobbies") {
+      return (
+        <div className="border p-4 mb-4 rounded-md">
+          <h1>Hobby Page</h1>
+          {userDb[0].hobbies.map((hobby) => (
+            <ul key={hobby}>
+              <li>{hobby}</li>
+            </ul>
           ))}
-        </ul>
-        <Link href={`/view/${user.id}`}>
-          <Button className="mt-4">Back to Profile</Button>
-        </Link>
-      </div>
-    );
+        </div>
+      )
+    }
   }
 
-  // Profile page
+  // Validation
+  const checkValidUser: Boolean = userDb[0].id === slug[0];
+  console.log(checkValidUser)
+  // If not Valid User
+  if (!checkValidUser) {
+    return (
+      <div className="border p-4 mb-4 rounded-md">
+        Not Found User
+      </div>
+    )
+  }
+
+  // If Valid User -> Render actual page
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <div className="container mx-auto p-6">
-        <div key={user.id} className="border p-4 mb-4 rounded-md">
-          <h1>{user.name}</h1>
-          <h2>{user.section}</h2>
-          <p className="mb-4">Email: {user.email}</p>
-          <Link href={`/view/${user.id}/hobbies`}>
+        <div key={userDb[0].id} className="border p-4 mb-4 rounded-md">
+          <h1>{userDb[0].name}</h1>
+          <h2>{userDb[0].section}</h2>
+          <p className='mb-4'>Email: {userDb[0].email}</p>
+          <Link href="./jameboy/hobbies">
             <Button>View Hobbies</Button>
           </Link>
         </div>
       </div>
     </Suspense>
-  );
+  )
 }
