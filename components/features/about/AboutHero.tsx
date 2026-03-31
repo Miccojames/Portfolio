@@ -13,7 +13,7 @@ export function AboutHero() {
                         About Me
                     </h1>
                     <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        I'm a passionate developer driven by the challenge of creating efficient, scalable, and user-friendly web applications.
+                        I'm Micco. I'm studying front-end development and enjoy building clean UI. I love turning ideas into interactive experiences that feel intuitive and visually engaging. My focus is on crafting responsive layouts, clean code, and seamless user journeys. Whether it's a portfolio site or a full-blown web app, I aim to build interfaces that not only look good but work beautifully across devices. I'm constantly learning new tools and techniques to push my skills further and bring creativity into every project.
                     </p>
                 </div>
 
@@ -35,8 +35,8 @@ export function AboutHero() {
 
             <div className="flex justify-center items-center">
                 <Image
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="Coding Environment"
+                    src="/2.jpg"
+                    alt="Micco James Ang"
                     width={500}
                     height={500}
                     className="rounded-2xl shadow-2xl object-cover w-full max-w-[500px] aspect-square transform rotate-3 hover:rotate-0 transition-transform duration-500"
