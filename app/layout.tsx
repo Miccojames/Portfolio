@@ -1,6 +1,7 @@
 import "../styles/globals.css"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import { ThemeProvider } from "next-themes"
 
 export const metadata = {
   title: "Micco Portfolio",
@@ -15,13 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Navbar />
 
-        <Navbar />
+          {children}
 
-        {children}
-
-        <Footer />
-
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

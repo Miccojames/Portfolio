@@ -14,9 +14,15 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-4">
-            <Github size={18}/>
-            <Linkedin size={18}/>
-            <Mail size={18}/>
+            <a href="https://github.com/micco" target="_blank" rel="noopener noreferrer">
+              <Github size={18} className="hover:text-primary transition-colors" />
+            </a>
+            <a href="https://linkedin.com/in/micco" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={18} className="hover:text-primary transition-colors" />
+            </a>
+            <a href="mailto:contact@micco.dev" className="hover:text-primary transition-colors">
+              <Mail size={18} />
+            </a>
           </div>
 
         </div>

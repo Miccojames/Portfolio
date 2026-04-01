@@ -3,8 +3,15 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { Toaster } from "@/components/ui/sooner"
+import { toast } from "sonner"
 
 export default function Contact() {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    toast.success("Message sent successfully!")
+  }
+
   return (
     <section id="contact" className="py-24">
 
@@ -14,7 +21,7 @@ export default function Contact() {
           Contact Me
         </h2>
 
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
 
           <Input placeholder="Name" />
 
@@ -22,7 +29,7 @@ export default function Contact() {
 
           <Textarea placeholder="Message" />
 
-          <Button className="w-full">
+          <Button className="w-full" type="submit">
             Send Message
           </Button>
 
@@ -30,6 +37,7 @@ export default function Contact() {
 
       </div>
 
+      <Toaster />
     </section>
   )
 }
