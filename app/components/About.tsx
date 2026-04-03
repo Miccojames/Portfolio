@@ -9,7 +9,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
             <Image
-              src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/481994199_1725365931751601_7538237545907782544_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeFIK5jBcqpV5_rx2ZpJ-9rjfaf4Ibtqalp9p_ghu2pqWqjNHJ_X2reyee5VCPknU7Sdoxkp59_atnWgQw2I_f3H&_nc_ohc=LKexNt75ZroQ7kNvwFTYfBB&_nc_oc=Adq08cZ_-XlYeeRVEq2rq2gOOupUqpwdj1lAWkmdyIbeVPwEsiv4p_akt7OgC1Ejdfs&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=t9sL_ev1KU75qVGhrjwkZA&_nc_ss=7a3a8&oh=00_Af0WjwfegYNJD6hfOdSE--LH4mLJrdV-bJMPwe6mwZdJlA&oe=69D4FDC5"
+              src="/3.jpg"
               width={400}
               height={400}
               alt="Profile"
