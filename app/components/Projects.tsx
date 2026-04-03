@@ -5,47 +5,19 @@ import { ArrowUpRight, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Modern online store with product catalog, shopping cart, and payment integration",
-    tech: ["Next.js", "React", "Stripe", "Tailwind CSS"],
-    github: "#",
-    live: "#"
-  },
-  {
-    title: "Gym Management System",
-    description: "Full-featured system for managing gym memberships, classes, and member workouts",
-    tech: ["React", "Node.js", "MongoDB", "Express"],
-    github: "#",
+    title: "E-Commerce ",
+    description: "Modern online store with product catalog, shopping cart,",
+    tech: [ "React",  "Tailwind CSS"],
+    github: "https://github.com/JanAro1/Ecommerce-App",
     live: "#"
   },
   {
     title: "Portfolio Website",
     description: "Personal developer portfolio showcasing projects and skills with modern design",
-    tech: ["Next.js", "Tailwind CSS", "TypeScript", "React"],
-    github: "#",
-    live: "#"
+    tech: [ "Tailwind CSS",  "React"],
+    github: "https://github.com/Miccojames/Micco-OS",
+    live: "https://micco-portfolio.vercel.app/"
   },
-  {
-    title: "Task Manager App",
-    description: "Productive task management application with real-time updates and collaboration",
-    tech: ["React", "Firebase", "Tailwind CSS", "JavaScript"],
-    github: "#",
-    live: "#"
-  },
-  {
-    title: "Weather App",
-    description: "Real-time weather application with location search and forecast visualization",
-    tech: ["React", "Weather API", "Axios", "Chart.js"],
-    github: "#",
-    live: "#"
-  },
-  {
-    title: "Blog Platform",
-    description: "Modern blogging platform with markdown support and advanced filtering options",
-    tech: ["Next.js", "MDX", "Prisma", "PostgreSQL"],
-    github: "#",
-    live: "#"
-  }
 ]
 
 export default function Projects() {
