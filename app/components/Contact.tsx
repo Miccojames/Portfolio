@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-primary/20 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -26,7 +26,7 @@ export default function Contact() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button size="lg" className="gap-2 rounded-full h-14 px-8 text-base shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-shadow" asChild>
-              <a href="mailto:micco@example.com">
+              <a href="mailto:miccojamesang9@gmail.com">
                 <Mail className="h-5 w-5" />
                 Email Me
               </a>

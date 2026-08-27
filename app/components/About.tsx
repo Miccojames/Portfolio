@@ -44,8 +44,8 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className="md:col-span-5 relative group"
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl -rotate-6 scale-105 transition-transform group-hover:rotate-0 group-hover:scale-100 duration-500"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border/50 h-[500px]">
+            <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-transparent rounded-2xl -rotate-6 scale-105 transition-transform group-hover:rotate-0 group-hover:scale-100 duration-500"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-border/50 h-125">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentImageIndex}

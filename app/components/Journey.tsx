@@ -30,7 +30,7 @@ export default function Journey() {
               <Briefcase className="h-6 w-6 text-primary" />
               Development Path
             </h3>
-            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-[1.125rem] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-border before:to-transparent">
+            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-[1.125rem] before:-translate-x-px before:h-full before:w-0.5 before:bg-linear-to-b before:from-transparent before:via-border before:to-transparent">
               {journey.map((item, index) => (
                 <motion.div 
                   key={index}

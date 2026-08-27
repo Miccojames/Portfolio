@@ -56,7 +56,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </div>
 
         {/* Hero Image */}
-        <div className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden border border-border/50 shadow-xl bg-muted/50">
+        <div className="relative h-75 md:h-125 w-full rounded-2xl overflow-hidden border border-border/50 shadow-xl bg-muted/50">
           <Image
             src={project.image}
             fill

@@ -37,7 +37,7 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="flex flex-col h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 group bg-background/50 backdrop-blur-sm">
-                <Link href={`/projects/${project.slug}`} className="block relative h-[300px] overflow-hidden border-b border-border/50 bg-muted/50">
+                <Link href={`/projects/${project.slug}`} className="block relative h-75 overflow-hidden border-b border-border/50 bg-muted/50">
                   <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors z-10" />
                   <Image
                     src={project.image}

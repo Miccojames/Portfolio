@@ -3,7 +3,7 @@ export const projects = [
     slug: "fitfinder",
     title: "FitFinder / GymOS",
     description: "A gym management platform with role-based dashboards, gym management, memberships, payments, AI assistant, and other features.",
-    image: "/window.svg", // Placeholder, user will provide
+    image: "/fitfinder.png",
     role: "Full-Stack Developer",
     technologies: ["React", "Next.js", "Tailwind CSS", "Node.js", "PostgreSQL"],
     features: [
@@ -24,7 +24,7 @@ export const projects = [
     slug: "ai-academic-schedule",
     title: "AI Academic Schedule Reminder",
     description: "A web application for managing academic schedules and reminders with an AI assistant.",
-    image: "/file.svg", // Placeholder
+    image: "/ai-academic-schedule.png",
     role: "Frontend Developer",
     technologies: ["React", "Next.js", "Tailwind CSS", "OpenAI API"],
     features: [
@@ -45,7 +45,7 @@ export const projects = [
     slug: "ecommerce",
     title: "E-Commerce Website",
     description: "A modern e-commerce application with product browsing, filtering, product details, and shopping functionality.",
-    image: "/window.svg", // Placeholder
+    image: "/ecommerce.png",
     role: "Frontend Developer",
     technologies: ["React", "Next.js", "Tailwind CSS", "Zustand"],
     features: [
@@ -66,7 +66,7 @@ export const projects = [
     slug: "student-management",
     title: "Student Management System",
     description: "A CRUD-based student management system with authentication and database functionality.",
-    image: "/file.svg", // Placeholder
+    image: "/student-management.png",
     role: "Full-Stack Developer",
     technologies: ["PHP", "MySQL", "Tailwind CSS", "JavaScript"],
     features: [

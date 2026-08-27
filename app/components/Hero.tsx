@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center py-24 px-4 overflow-hidden">
       {/* Background gradients */}
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:50px_50px]" />
+      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       <div className="absolute top-0 -translate-y-12 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] opacity-50 pointer-events-none" />
       <div className="absolute bottom-0 translate-y-1/3 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[128px] opacity-50 pointer-events-none" />
 
@@ -72,10 +72,10 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative h-[400px] md:h-[500px] w-full rounded-[2rem] overflow-hidden border border-border/50 shadow-2xl"
+          className="relative h-100 md:h-125 w-full rounded-[2rem] overflow-hidden border border-border/50 shadow-2xl"
         >
           {/* Subtle overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent z-10" />
+          <div className="absolute inset-0 bg-linear-to-t from-background/40 to-transparent z-10" />
           <Image
             src="/2.jpg"
             fill
