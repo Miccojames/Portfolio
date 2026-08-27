@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Mail, Twitter, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 
 export default function Footer() {
